@@ -253,7 +253,7 @@ h2 + section > .symbol-detail-labels:first-child,
 
 // TODO: use class selectors
 #jsdoc-content, .summary-content, .symbol-index-content {
-    .make-row();
+    display: flex;
 }
 
 .summary-column, .symbol-index-column {
@@ -262,14 +262,13 @@ h2 + section > .symbol-detail-labels:first-child,
 
 // TODO: use class selectors
 #jsdoc-content-container {
-    .make-md-column(9);
-    .make-md-column-push(3);
+    flex: 3
 }
 
 // TODO: use class selectors
 #jsdoc-toc-nav {
-    .make-md-column(3);
-    .make-md-column-pull(9);
+    flex: 1;
+    position: fixed;
     font-family: @h-font, sans-serif;
     margin-top: (@line-height-computed * 2.5);
 }
