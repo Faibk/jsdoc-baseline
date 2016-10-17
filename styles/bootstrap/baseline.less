@@ -268,9 +268,12 @@ h2 + section > .symbol-detail-labels:first-child,
 // TODO: use class selectors
 #jsdoc-toc-nav {
     flex: 1;
-    position: fixed;
+    order: -1;
     font-family: @h-font, sans-serif;
     margin-top: (@line-height-computed * 2.5);
+
+    ul
+        position: fixed;
 }
 
 
